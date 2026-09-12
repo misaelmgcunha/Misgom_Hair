@@ -1,0 +1,23 @@
+/* IMPORTAÇÕES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* CONFIGURAÇÕES GERAIS */
+
+:root {
+    --cor1: #21150F;
+    --cor2: #4A3022;
+    --cor3: #E8D3BC;
+    --cor4: #F7F1EA;
+    --cor5: #C9A574;
+    --cor6: #17120F;
+    --cor7: #FFFFFF;
+
+    --fonte1: "Playfair Display";
+    --fonte2: "Montserrat";
+    
+}
+
+h1 {
+    font-family: var(--fonte1);
+}
