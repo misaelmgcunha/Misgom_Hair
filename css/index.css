@@ -18,6 +18,109 @@
     
 }
 
-h1 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2 {
     font-family: var(--fonte1);
+}
+
+p, a {
+    font-family: var(--fonte2);
+}
+
+/* ========================================================= */
+/* CONFIGURAÇÃO DO SITE - Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
+    width: 100vw;
+    height: 100px;
+    background-color: var(--cor1);
+}
+
+header > img {
+    max-width: 80px;
+    margin-left: 20px;
+}
+
+header > span#burguer, header > menu > span#burguerclose {
+    margin-right: 20px;
+
+    color: var(--cor4);
+    font-size: 3em;
+}
+
+header > span#burguer:hover, header > menu > span#burguerclose:hover {
+    cursor: pointer;
+}
+
+header > menu {
+    display: none;
+
+    background-color: var(--cor1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 350px;
+}
+
+header > menu > span#burguerclose {
+    display: flex;
+    justify-content: right;
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+header > menu > ul > li {
+    list-style-type: none;
+}
+
+header > menu > ul > li > a {
+    color: var(--cor7);
+    font-size: 1.2em;
+    text-align: center;
+
+    background-color: var(--cor5);
+    padding: 10px;
+    display: block;
+    border-top: 2px solid var(--cor7);
+}
+
+header > menu > ul > li > a#whats_menu {
+    padding-bottom: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    padding-top: 20px;
+    border-bottom: 3px solid var(--cor7);
+}
+
+header > menu > ul > li > a#whats_menu > img {
+    width: 30px;
+    filter: brightness(0) invert(1);
+
+    margin-right: 10px;
+}
+
+
+header > a#whats_header {
+    display: none;
+
+    color: var(--cor7);
+    font-size: 1.2em;
+}
+
+header > a#whats_header > img {
+    width: 30px;
 }

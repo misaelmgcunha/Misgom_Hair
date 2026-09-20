@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="img/geral/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <title>Misgom Hair</title>
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <img src="img/geral/logo.png" alt="Logo Marca">
+
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="Navegação">
+            <span class="material-symbols-outlined" id="burguerclose" onclick="clickMenu()">menu</span>
+            <ul>
+                <li><a href="#">Ínicio</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="http://wa.me/5571992364374" target="_blank" id="whats_menu"><img src="img/geral/icone_whatsapp.svg" alt="Ícone">WhatsApp</a></li>
+            </ul>
+        </menu>
+
+        <a href="http://wa.me/5571992364374" target="_blank" id="whats_header"><img src="img/geral/icone_whatsapp.svg" alt="Ícone">WhatsApp</a>
     </header>
+    <script>
+        function clickMenu() {
+            if (Navegação.style.display == 'block') {
+                Navegação.style.display = 'none'
+                burguer.style.display = 'block'
+                
+            } else {
+                Navegação.style.display = 'block'
+                burguer.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
