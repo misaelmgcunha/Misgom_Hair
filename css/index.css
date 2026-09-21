@@ -25,7 +25,7 @@
     text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--fonte1);
 }
 
@@ -42,7 +42,7 @@ header {
     align-items: center;
     position: sticky;
 
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: var(--cor1);
 }
@@ -70,7 +70,7 @@ header > menu {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     height: 350px;
 }
 
@@ -144,7 +144,7 @@ section#hero {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
-    width: 100vw;
+    width: 100%;
     height: 40vh;
 }
 
@@ -215,4 +215,151 @@ section#secao-qualidades > .qualidade > span {
 
 section#secao-qualidades > .qualidade > p {
     font-size: 1.1em;
+}
+
+/* ========================================================= */
+/* CONFIGURAÇÃO DO SITE - Seção Produtos */
+/* ========================================================= */
+section#secao-produtos > h2 {
+    padding-top: 30px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+section#secao-produtos > p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#secao-produtos > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75%;
+
+    color: var(--cor5);
+    font-weight: 500;
+
+    padding-bottom: 40px;
+}
+
+section#secao-produtos > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section#secao-produtos > a > span {
+    margin-left: 10px;
+}
+
+section#secao-produtos > .produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+section#secao-produtos > .produtos > .produto {
+    max-width: 200px;
+}
+
+section#secao-produtos > .produtos > .produto > img {
+    max-width: 200px;
+}
+
+section#secao-produtos > .produtos > .produto > .produto-titulo {
+    text-align: left;
+    font-weight: bold;
+    max-width: 150px;
+    padding-bottom: 5px;
+}
+
+section#secao-produtos > .produtos > .produto > .produto-preco {
+    text-align: left;
+    color: #3a3a3a;
+    padding-bottom: 15px;
+}   
+
+section#secao-produtos > .produtos > .produto > a {
+    display: block;
+    background-color: var(--cor2);
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: var(--cor7);
+    transition: transform 0.5s ease;
+}
+
+section#secao-produtos > .produtos > .produto > a:hover {
+    background-color: var(--cor5);
+    font-weight: bold;
+    transform: translateY(-10px);
+}
+
+/* ========================================================= */
+/* CONFIGURAÇÃO DO SITE - Seção banner */
+/* ========================================================= */
+section#secao-banner {
+    background-image: url(../img/index/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+
+    padding-top: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+
+section#secao-banner > h2 {
+    display: block;
+    color: var(--cor7);
+    font-size: 2.5em;
+    width: 60%;
+}
+
+section#secao-banner > p {
+    display: block;
+    color: var(--cor1);
+    font-size: 1.3em;
+    font-weight: 500;
+    width: 60%;
+
+    padding-top: 20px;
+}
+
+section#secao-banner > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-right: 40px;
+    background-color: var(--cor5);
+    color: var(--cor7);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+}
+
+section#secao-banner > a:hover {
+    background-color: var(--cor2);
+    transform: translateY(-5px);
+}
+
+section#secao-banner > a > img {
+    width: 30px;
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
 }
