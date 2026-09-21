@@ -363,3 +363,33 @@ section#secao-banner > a > img {
     filter: brightness(0) invert(1);
     margin-right: 10px;
 }
+
+/* ========================================================= */
+/* CONFIGURAÇÃO DO SITE - Footer */
+/* ========================================================= */
+footer {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--cor1);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer > img {
+    max-width: 130px;
+}
+
+footer > div#redes-sociais > a > img {
+    margin: 0 5px;
+    filter: brightness(0) invert(1);
+    max-width: 40px;
+}
+
+footer > p {
+    color: var(--cor7);
+    font-size: 0.9em;
+}
