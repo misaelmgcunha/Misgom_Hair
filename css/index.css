@@ -202,7 +202,7 @@ section#secao-qualidades {
     padding: 20px 10px;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
     gap: 15px;
     align-items: center;
@@ -235,10 +235,9 @@ section#secao-produtos > p {
 }
 
 section#secao-produtos > a {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin-left: 75%;
 
     color: var(--cor5);
     font-weight: 500;
@@ -259,7 +258,7 @@ section#secao-produtos > .produtos {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     gap: 10px;
 
     text-align: center;
@@ -271,13 +270,13 @@ section#secao-produtos > .produtos > .produto {
 }
 
 section#secao-produtos > .produtos > .produto > img {
-    max-width: 200px;
+    max-width: 100px;
 }
 
 section#secao-produtos > .produtos > .produto > .produto-titulo {
     text-align: left;
     font-weight: bold;
-    max-width: 150px;
+    max-width: 100%;
     padding-bottom: 5px;
 }
 
@@ -291,7 +290,7 @@ section#secao-produtos > .produtos > .produto > a {
     display: block;
     background-color: var(--cor2);
     margin-top: 10px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 20px;
     color: var(--cor7);
     transition: transform 0.5s ease;
@@ -320,22 +319,22 @@ section#secao-banner {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 section#secao-banner > h2 {
     display: block;
     color: var(--cor7);
     font-size: 2.5em;
-    width: 60%;
+    width: 80%;
 }
 
 section#secao-banner > p {
     display: block;
-    color: var(--cor1);
+    color: var(--cor7);
     font-size: 1.3em;
     font-weight: 500;
-    width: 60%;
+    width: 80%;
 
     padding-top: 20px;
 }
@@ -393,4 +392,5 @@ footer > div#redes-sociais > a > img {
 footer > p {
     color: var(--cor7);
     font-size: 0.9em;
+    width: 90%;
 }
