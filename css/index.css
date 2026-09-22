@@ -394,3 +394,253 @@ footer > p {
     font-size: 0.9em;
     width: 90%;
 }
+
+/* ========================================================= */
+/* CONFIGURAÇÃO DO SITE - TABLET (>= 768px) */
+/* ========================================================= */
+@media (min-width: 768px) {
+    /* Header */
+    header {
+        padding: 0 40px;
+    }
+
+    header > img {
+        margin-left: 0;
+        max-width: 90px;
+    }
+
+    /* Hero */
+    section#hero {
+        background-image: url(../img/index/hero_G.png);
+        background-position: right;
+        min-height: 480px;
+        padding: 80px 40px 40px 40px;
+    }
+
+    section#hero > h1 {
+        font-size: 3.2em;
+        width: 70%;
+    }
+
+    section#hero > p {
+        font-size: 1.5em;
+        width: 70%;
+    }
+
+    section#hero > a {
+        max-width: 300px;
+    }
+
+    /* Seção Qualidades */
+    section#secao-qualidades {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 30px 20px;
+    }
+
+    section#secao-qualidades > .qualidade {
+        flex: 1 1 200px;
+        max-width: 220px;
+    }
+
+    /* Seção Produtos */
+    section#secao-produtos {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    section#secao-produtos > h2 {
+        font-size: 2.2em;
+    }
+
+    section#secao-produtos > .produtos {
+        flex-flow: row wrap;
+        gap: 30px;
+    }
+
+    section#secao-produtos > .produtos > .produto {
+        max-width: 220px;
+        flex: 1 1 calc(50% - 30px); /* 2 colunas no tablet */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--cor4);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    section#secao-produtos > .produtos > .produto > img {
+        max-width: 140px;
+        border-radius: 8px;
+    }
+
+    /* Banner */
+    section#secao-banner {
+        min-height: 400px;
+        padding: 40px;
+    }
+
+    section#secao-banner > h2 {
+        font-size: 3em;
+        width: 70%;
+        text-align: center;
+    }
+
+    section#secao-banner > p {
+        font-size: 1.5em;
+        width: 70%;
+        text-align: center;
+    }
+}
+
+/* ========================================================= */
+/* CONFIGURAÇÃO DO SITE - PC/NOTEBOOKS/TV (>= 992px) */
+/* ========================================================= */
+@media (min-width: 992px) {
+    /* Header - Transição do Menu Mobile para Desktop */
+    header {
+        padding: 0 80px;
+        height: 110px;
+    }
+
+    header > span#burguer, 
+    header > menu > span#burguerclose {
+        display: none !important; /* Esconde o botão hambúrguer */
+    }
+
+    header > menu {
+        display: block !important; /* Mantém o menu visível no topo */
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+
+    header > menu > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+    }
+
+    header > menu > ul > li > a {
+        background-color: transparent;
+        color: var(--cor7);
+        border: none;
+        padding: 8px 12px;
+        font-size: 1.05em;
+        transition: color 0.3s ease;
+    }
+
+    header > menu > ul > li > a:hover {
+        color: var(--cor5);
+        text-decoration: none;
+    }
+
+    header > menu > ul > li > a#pag-atual {
+        color: var(--cor5);
+        border-bottom: 2px solid var(--cor5);
+    }
+
+    /* Esconde o botão do WhatsApp do menu hamburguer para exibir o do header */
+    header > menu > ul > li#li_whats {
+        display: none;
+    }
+
+    header > a#whats_header {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--cor5);
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: var(--cor1);
+        font-weight: 600;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    header > a#whats_header:hover {
+        background-color: var(--cor3);
+        transform: translateY(-2px);
+    }
+
+    /* Hero */
+    section#hero {
+        min-height: 550px;
+        padding: 100px 80px 60px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section#hero > h1 {
+        font-size: 3.8em;
+        width: 50%;
+    }
+
+    section#hero > p {
+        font-size: 1.6em;
+        width: 50%;
+    }
+
+    /* Qualidades */
+    section#secao-qualidades {
+        padding: 40px 80px;
+    }
+
+    section#secao-qualidades > .qualidade > span {
+        font-size: 2.5em;
+    }
+
+    section#secao-qualidades > .qualidade > p {
+        font-size: 1.05em;
+    }
+
+    /* Produtos - Layout em 4 colunas */
+    section#secao-produtos {
+        padding: 40px 0 60px 0;
+    }
+
+    section#secao-produtos > .produtos {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    section#secao-produtos > .produtos > .produto {
+        flex: 1;
+        max-width: 260px;
+        padding: 20px;
+    }
+
+    section#secao-produtos > .produtos > .produto > img {
+        max-width: 180px;
+    }
+
+    /* Banner */
+    section#secao-banner {
+        min-height: 450px;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+
+    section#secao-banner > h2 {
+        font-size: 3.5em;
+        width: 60%;
+    }
+
+    section#secao-banner > p {
+        font-size: 1.6em;
+        width: 60%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 0 20px 0;
+    }
+
+    footer > p {
+        text-align: center;
+    }
+}
